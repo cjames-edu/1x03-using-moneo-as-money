@@ -10,7 +10,7 @@
 
 ### INTRO
 
-Hello again adventurers. Welcome to the third video in the MoneroGuides video series:  **Using Monero as Money**
+Hello again adventurers. Welcome to the third video in the MoneroGuides video series:  *Using Monero as Money*
 
 In this video we will be setting up a wallet, obtaining some juicy Monero and spending it like cash money
 
@@ -28,11 +28,7 @@ In this video, we'll be using **Feather wallet on Linux**.  Grab the software on
 If you've been following this series from the beginning, please download and verify the wallet for your OS now. If you've just joined us and feel confused, please start with the first video in our series: *Importing Public Keys and Verifying Hashes*.
 
 
-
-
-
-
-### CONNECTING TO THE MONERO NETWORK
+### CONNECT TO THE MONERO NETWORK
 
 Windows users will be ready to connect right after installing Feather
 
@@ -50,7 +46,7 @@ When Feather starts for the first time you will be greeted by the welcome screen
 Ready to get going?  Let's dive right in!
 
 
-### INITIALISING YOUR WALLET
+### INITIALIZE YOUR WALLET
 
 After following all the steps in the last video, you should be able to choose the *Select node manually* option
 
@@ -64,27 +60,29 @@ To connect to the Monero daemon, you will need to edit the firewall rules on the
 
 Follow the instructions from our second video *Setting up your own Node*, for all the steps.  You don't need to edit the firewall rules on your router yet.
 
-If you aren't currently hosting your own node, please select the *Auto connect* option. This will instruct Feather to connect you to any one of its preselected nodes.
+If you won't be hosting your own node yet, please select the *Auto connect* option. This will instruct Feather to connect you to any one of its preselected nodes.
 
 After selecting the appropriate connection method click *Next*
 
-// next section
+
 ### NETWORK PRIVACY OPTIONS
 
-Now we're now going to select how Feather will route its network traffic. 
+Now we're going to select how Feather will route its network traffic. The default settings will tell Feather to use Tor for its functions. However if you are using the *Auto connect option* Feather will initially connect to a node using traditional clearnet methods.
 
-The default settings will tell Feather to use Tor for its functions. However if you are using the *auto connect option* Feather will initially connect to a node using traditional methods.
+As we previously mentioned in the second video of our series, connecting to the Monero daemon over the clearnet will reveal potentially sensitive information to both:
+- the node's host
+- ***your Internet Service Provider (ISP)***
 
-As mentioned in the second video in this series, this will reveal potentially sensitive information to the node's host and ***will reveal a connection to the Monero network to your ISP*** (Internet Service Provvider)
+The tradeoff for privacy is speed.  Tor network traffic is slower and the initial synchronisation will take a great deal longer over Tor.  That said, the default setting is to use Tor in order to keep your Monero activities and IP address private.
 
-The initial synchronisation can take some time over Tor, which is why the default settings are configured this way. If you wish to keep your activities and IP address private you should first select *Configure manually* and then *Route all traffic over Tor*.
+Choose *Configure manually* and then *Route all traffic over Tor*
 
-If you are connecting to your own local node you may use the default settings without any worry. However, selecting *Route all traffic over Tor* can be used as a fail-safe option. This is what we will be doing.
+If you are connecting to your own local node you may use the default settings without any worry. However, selecting *Route all traffic over Tor* can always be used as a fail-safe option. This is what we will be doing here today.
 
 Now that we've configured our network settings it's time to move on to generating our seed phrase. Go ahead and select *Next*.
 
 
-### GENERATING YOUR SEED PHRASE
+### GENERATE YOUR SEED PHRASE
 
 To continue we're going to select *Create new wallet* and then click *Next*.
 
